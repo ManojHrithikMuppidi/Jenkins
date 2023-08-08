@@ -37,3 +37,17 @@ services:
 - cat jenkins_home/secrets/initialAdminPassword
 
 #### Jenkins URL: http://13.126.129.155:8080/
+
+
+### Jenkins Admin Password
+Jenkins admin password aee2ba1322924fa7b99232cb98a00872 
+## Steps to manually Jenkins installation in Amazon Ec2 Server (jenkins.io offical website)
+- yum install java-11 -y (for installing java for jenkins)
+- wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+- rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+- yum install jenkins
+- systemctl start jenkins
+- systemctl enable jenkins
+- systemctl status jenkins
+  
+#### Jenkins URL: http://65.2.153.244:8080
